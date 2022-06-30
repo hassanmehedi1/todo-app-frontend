@@ -4,7 +4,7 @@ import { Link, useNavigate } from "react-router-dom";
 const Navbar = (props) => {
   return (
     <div>
-      <nav className="navbar navbar-expand-lg navbar-dark bg-nav p-3">
+      <nav className="navbar navbar-expand-lg navbar-dark bg-nav p-4">
         <div className="container-fluid">
           <div className="box">
             <div></div>
@@ -18,7 +18,7 @@ const Navbar = (props) => {
             <div></div>
             <div></div>
           </div>
-          <Link className="navbar-brand fs-1" to="/">
+          <Link className="navbar-brand " to="/">
             {props.title}
           </Link>
           <button

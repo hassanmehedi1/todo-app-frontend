@@ -70,7 +70,7 @@ const ToDo = () => {
              </div>
            </div>
            <div className="col-md-7">
-             {/* <Todos />  */}
+             <Todos /> 
            </div>
          </div>
        </div>
