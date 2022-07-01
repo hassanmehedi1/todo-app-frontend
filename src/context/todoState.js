@@ -3,7 +3,7 @@ import TodoContext from "./todoContext";
 import { toast } from "react-toastify";
 
 const TodoState = (props) => {
-  const host = "http://localhost:5000";
+  const host = "https://safe-headland-21935.herokuapp.com";
   const todosInitial = [];
   const [todos, setTodo] = useState(todosInitial);
 
@@ -37,7 +37,6 @@ const TodoState = (props) => {
     const json = await response.json();
     setTodo(json);
   };
-
 
   //get completed todos
 
@@ -98,7 +97,6 @@ const TodoState = (props) => {
     toast("Todo Deleted");
   };
 
-
   return (
     <TodoContext.Provider
       value={{
@@ -113,6 +111,6 @@ const TodoState = (props) => {
       {props.children}
     </TodoContext.Provider>
   );
-}
+};
 
 export default TodoState;
